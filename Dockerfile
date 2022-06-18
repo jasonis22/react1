@@ -24,7 +24,7 @@ RUN rm -rf /etc/nginx/conf.d
 COPY conf /etc/nginx
 
 # Copy artifact from previous build to /usr/share/nginx/html
-COPY --from=build-stage /app/public/usr/share/nginx/html
+COPY --from=build-stage /app/public /usr/share/nginx/html
 
 # Expose application on port 80
 EXPOSE 80
