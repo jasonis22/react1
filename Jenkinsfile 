@@ -24,7 +24,7 @@ pipeline {
         stage('Build') {
           steps {
             echo 'Running build phase'
-            sh 'docker build -t --name my-react-app:latest .' // Docker build image
+            sh 'docker build -t my-react-app:latest .' // Docker build image
           }
         }
         stage('Deploy') {
