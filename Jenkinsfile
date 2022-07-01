@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    label 'lts-alpine AS build-stage'
+    label 'ubuntu'
   }
 
   options {
