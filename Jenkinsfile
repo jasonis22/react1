@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    label 'Infohob-App-Server'
+    label 'lts-alpine AS build-stage'
   }
 
   options {
