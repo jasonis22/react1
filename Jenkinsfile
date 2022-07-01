@@ -10,17 +10,6 @@ pipeline {
   }
 
   stages {
-    stage('Production') {
-      // when {
-      //   branch 'main'
-      // }
-      stages {
-        stage('Env File') {
-          steps {
-            echo 'Creating env file'
-            sh 'echo "VUE_APP_BASE_URL=http://3.127.104.45:5010/" > .env' // Create env file
-          }
-        }
         stage('Build') {
           steps {
             echo 'Running build phase'
