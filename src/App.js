@@ -103,6 +103,7 @@ function evaluate({ currentOperand, previousOperand, operation }) {
   const current = parseFloat(currentOperand)
   if (isNaN(prev) || isNaN(current)) return ""
   let computation = ""
+    // eslint-disable-next-line
   switch (operation) {
     // eslint-disable-next-line
     case "+":
