@@ -12,6 +12,7 @@ export const ACTIONS = {
 }
 
 function reducer(state, { type, payload }) {
+  // eslint-disable-next-line
   switch (type) {
     case ACTIONS.ADD_DIGIT:
       if (state.overwrite) {
@@ -103,6 +104,7 @@ function evaluate({ currentOperand, previousOperand, operation }) {
   if (isNaN(prev) || isNaN(current)) return ""
   let computation = ""
   switch (operation) {
+    // eslint-disable-next-line
     case "+":
       computation = prev + current
       break
